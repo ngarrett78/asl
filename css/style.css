@@ -51,9 +51,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home_jumbotron .container {
-    background-color: rgba(207, 103, 112, 0.89);
+    background-color: rgba(207, 103, 112, 0.95);
     padding: 20px 30px;
-    color:#fff;
+    color: #fff;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid #ccc;
 }
 
 /* wrappers for big images
@@ -140,29 +144,34 @@ body > div.container {
 /* buttons
 ================ */
 a:hover {
-    color: #ffffff;
-    background-color: #CA6A71;
+    color: #ffffff!important;
+    background-color: #CA6A71!important;
     border-color: #E4E4E4;
+
 }
 
 .btn-primary {
     color: #CA6A71;
-    background-color: #FFFFFF;
+    background-color: #FFFFFF!important;
     border-color: #E4E4E4;
 }
 
 
 .btn-primary:hover {
-    color: #ffffff;
-    background-color: #CA6A71;
+    color: #ffffff!important;
+    background-color: #CA6A71!important;
     border-color: #E4E4E4;
 }
 
 
 .btn-primary:active {
-    color: #CA6A71;
-    background-color: #FFFFFF;
-    border-color: #E4E4E4;
+    color: #ffffff!important;
+    background-color: #CA6A71!important;
+    border-color: #E4E4E4!important;
+}
+
+.btn:focus,.btn:active {
+    outline: none !important;
 }
 
 /* Nav bar - mobile 
@@ -194,6 +203,11 @@ h2{
 
 /* Login
 ======================= */
+.modal-body #login{
+    width:80%;
+}
+
+
 #main {
     margin-top: 30%;
 }
@@ -226,22 +240,17 @@ h2{
     border: 2px solid #ccc;
     padding: 10px 40px 25px;
     margin: 0 auto;
-    background-color: rgba(157, 129, 137, 0.92);
+    background-color: rgba(51, 47, 47, 0.86);
     color:#fff;
     -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
     -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
     box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
 }
-#login > a {
-    color:#fff;
-}
-
 
 a{
     text-decoration:none;
     color: #f1f1f1;
 }
-
 
 label {
     font-weight:normal;
@@ -250,12 +259,12 @@ label {
 /*  Modal
 ================= */
 .modal-header {
-    background-color: #9d8189;
-    color: #fff;
+    background-color: #363131;
+    color: #FFFFFF;
     margin-bottom:15px;
 }
 .modal-content {
-    background-color: rgba(157, 129, 137, 0.67);
+    background-color: rgba(56, 56, 56, 0.59);
 }
 
 
@@ -271,7 +280,7 @@ input[type=text],input[type=password], input[type=email]{
 
 input[type=submit]{
     width: 100%;
-    background-color:#f4acb7;
+    background-color: #f4acb7;
     color: white;
     padding: 10px;
     font-size:20px;
